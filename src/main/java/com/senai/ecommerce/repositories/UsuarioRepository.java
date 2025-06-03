@@ -7,4 +7,5 @@ import com.senai.ecommerce.entities.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 	Usuario findByEmail(String email);
+	Usuario findByLogin(String email);
 }
